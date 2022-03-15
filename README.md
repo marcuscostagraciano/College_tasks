@@ -9,8 +9,8 @@ Currently on: 3rd
 - [x] First;
 - [x] Second;
 - [ ] Third;
-- [ ] Fourth - _Halfway there;
+- [ ] Fourth - _Halfway there;_
 - [ ] Fifth;
 - [ ] Sixth;
 - [ ] Seventh;
-- [ ] Eighth - _The last one
+- [ ] Eighth - _The last one_
