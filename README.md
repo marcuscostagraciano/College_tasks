@@ -1,9 +1,8 @@
 # College exams repository:
 
-As the name suggests, the aim of this repository is to save my homework done in college, like a journal :p
+As the name suggests, the aim of this repository is to save my homework done in college, something like a journal :p
 
 ## Semesters:
-Completed: 2<br>
 Currently on: 3rd
 
 - [x] First;
