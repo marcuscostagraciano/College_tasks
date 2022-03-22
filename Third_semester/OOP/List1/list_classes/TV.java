@@ -18,7 +18,7 @@ public class TV {
     }
     
     public void diminuirCanal(){
-        if (this.canal > 0) {this.canal++;}
+        if (this.canal > 0) {this.canal--;}
         else {this.canal = 10;}
     }
     
