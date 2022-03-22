@@ -49,14 +49,14 @@ public class main {
         System.out.println("\nCanal padrão: "+tv1.getCanal());
         System.out.println("Volume padrão: "+tv1.getVolume());
         tv1.alterarCanal(9);
-        tv1.diminuirVolume();
         System.out.println("Colocar no canal 9: "+tv1.getCanal());
-        System.out.println("Novo volume: "+tv1.getVolume());
+        tv1.diminuirVolume();
+        System.out.println("Novo volume: "+tv1.getVolume());        
         //Forçando canal < 0
         tv1.alterarCanal(0); tv1.diminuirCanal(); 
+        System.out.println("Novo canal: "+tv1.getCanal());        
         //Forçando volume < 0
         tv1.diminuirVolume();tv1.diminuirVolume();tv1.diminuirVolume();tv1.diminuirVolume(); 
-        System.out.println("Novo canal: "+tv1.getCanal());
         System.out.println("Novo volume: "+tv1.getVolume());
         
         // Exercício 5
