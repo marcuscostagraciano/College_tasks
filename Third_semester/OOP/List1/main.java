@@ -1,9 +1,4 @@
-import list_classes.BichinhoVirtual;
-import list_classes.Bola;
-import list_classes.BombaCombustivel;
-import list_classes.Pessoa;
-import list_classes.Quadrado;
-import list_classes.TV;
+import list_classes.*;
 
 /**
  *
@@ -37,8 +32,7 @@ public class main {
         System.out.println("Idade: "+pessoa1.getIdade());
         System.out.println("Altura: "+pessoa1.getAltura()+" cm");
         System.out.println("Peso: "+pessoa1.getPeso()+" kg");
-        pessoa1.envelhecer();  
-        pessoa1.crescer(2);
+        pessoa1.envelhecer();
         pessoa1.emagrecer(5);
         System.out.println("Nova idade: "+pessoa1.getIdade());
         System.out.println("Nova altura: "+pessoa1.getAltura()+" cm");
@@ -71,9 +65,8 @@ public class main {
         // Exercício 6
         BombaCombustivel bomba1 = new BombaCombustivel();
         System.out.println("\nLitros na bomba: "+bomba1.getLitrosNaBomba()+" litros");
-        System.out.println("Litros abastecidos por valor: "+bomba1.abastecerPorValor(50));
-        System.out.println("Valor abastecido: R$"+bomba1.abastecerPorLitro(50));
+        System.out.println("Abastecendo por valor: "+bomba1.abastecerPorValor(50)+" litros");
+        System.out.println("Abastecendo por litro: R$"+bomba1.abastecerPorLitro(10));
         System.out.println("Nova qtd de litros na bomba: "+bomba1.getLitrosNaBomba()+" litros");
-    }
-    
+    }    
 }

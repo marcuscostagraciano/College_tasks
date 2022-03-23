@@ -26,24 +26,9 @@ public class BichinhoVirtual {
         this.idade = nIdade;
     }
     
-    public String getNome(){
-        return this.nome;
-    }
-    
-    public int getFome(){
-        return this.fome;
-    }
-    
-    public int getSaude(){
-        return this.saude;
-    }
-    
-    public int getIdade(){
-        return this.idade;
-    }    
-    
-    public int getHumor(){
-        return (this.fome + this.saude) / 2;
-    }
-    
+    public String getNome(){return this.nome;}    
+    public int getFome(){return this.fome;}    
+    public int getSaude(){return this.saude;}    
+    public int getIdade(){return this.idade;}
+    public int getHumor(){return (this.fome + this.saude) / 2;}    
 }

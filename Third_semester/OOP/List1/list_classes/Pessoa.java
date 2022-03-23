@@ -17,37 +17,25 @@ public class Pessoa {
     }
     
     public void envelhecer(){
+        if (this.idade < 21) {crescer(0.5);}
         this.idade+=1;
-        if (this.idade < 21)
-        {crescer(0.5);}
     }
     
-    /**
-     *
-     * @param peso
-     */
     public void engordar(double peso){
         this.peso += peso;
     }
     
-    /**
-     *
-     * @param peso
-     */
     public void emagrecer(double peso){
         this.peso -= peso;
     }
     
-    /**
-     *
-     * @param tamanho
-     */
     public void crescer(double tamanho){
-        this.altura += tamanho;
+        if (this.idade < 21){
+            this.altura += tamanho;}
     }
     
-    public String getNome()     {return this.nome;}
-    public int getIdade()       {return this.idade;}
-    public double getAltura()   {return this.altura;}
-    public double getPeso()     {return this.peso;}
+    public String getNome(){return this.nome;}
+    public int getIdade(){return this.idade;}
+    public double getAltura(){return this.altura;}
+    public double getPeso(){return this.peso;}
 }

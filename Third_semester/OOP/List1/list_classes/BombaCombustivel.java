@@ -31,7 +31,5 @@ public class BombaCombustivel {
         this.qtdCombustivelNaBomba -= qtdRetirada;
     }
     
-    public double getLitrosNaBomba(){
-        return this.qtdCombustivelNaBomba;
-    }
+    public double getLitrosNaBomba(){return this.qtdCombustivelNaBomba;}
 }

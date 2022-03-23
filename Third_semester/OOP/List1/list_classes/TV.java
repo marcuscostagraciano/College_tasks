@@ -8,8 +8,8 @@ public class TV {
     private int canal, volume = 5;
     
     public void alterarCanal(int numCanal){
-        if (0 <= numCanal && numCanal <= 10){this.canal = numCanal;}
-        else {this.canal = 0;}
+        if (0 <= numCanal && numCanal <= 10)
+        {this.canal = numCanal;}
     }
     
     public void aumentarCanal(){
@@ -18,7 +18,7 @@ public class TV {
     }
     
     public void diminuirCanal(){
-        if (this.canal > 0) {this.canal--;}
+        if (this.canal > 0){this.canal--;}
         else {this.canal = 10;}
     }
     
@@ -32,6 +32,6 @@ public class TV {
         {this.volume--;}
     }
     
-    public int getCanal()   {return this.canal;}
-    public int getVolume()  {return this.volume;}
+    public int getCanal(){return this.canal;}
+    public int getVolume(){return this.volume;}
 }
