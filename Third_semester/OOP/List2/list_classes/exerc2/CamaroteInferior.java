@@ -9,5 +9,18 @@ package Lista2.list_classes.exerc2;
  * @author Marcus Vinícius da Costa Graciano - BSI3
  */
 public class CamaroteInferior extends VIP{
+    private String localizacao;
+    
+    public CamaroteInferior(double valor, double valorAdicional, String local){
+        super(valor, valorAdicional);
+        this.localizacao = local;
+    }
+    
+    /*
+    * @return location
+    */
+    public String getLocalizacao(){
+        return this.localizacao;
+    }
     
 }

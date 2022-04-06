@@ -10,4 +10,11 @@ package Lista2.list_classes.exerc2;
  */
 public class CamaroteSuperior extends VIP{
     
+    public CamaroteSuperior(double valor, double valorAdicional){
+        super((valor + valor*10/100), valorAdicional);
+    }
+    
+    public double imprimeValor(){
+        return super.imprimeValor();
+    }
 }

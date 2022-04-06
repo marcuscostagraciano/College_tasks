@@ -17,6 +17,6 @@ public class Chefe extends Empregado{
     }    
     
     public void aumentoSalarial(int percentual){
-        
+        super.aumentoSalarial(percentual, this.beneficio);
     }
 }

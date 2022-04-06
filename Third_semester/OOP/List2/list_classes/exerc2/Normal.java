@@ -10,7 +10,9 @@ package Lista2.list_classes.exerc2;
  */
 public class Normal extends Ingresso{
     
-    public Normal(){}
+    public Normal(double valor){
+        super(valor);
+    }
     
     public String tipoIngresso(){
         return "Ingresso normal";

@@ -17,6 +17,6 @@ public class Estagiario extends Empregado{
     }
     
     public void aumentoSalarial(int percentual){
-        
+        super.aumentoSalarial(percentual, -this.descontos);        
     }
 }

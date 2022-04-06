@@ -20,10 +20,8 @@ public class Empregado {
         this.salario = salario;
     }    
     
-    public void aumentoSalarial(int percentual){
-        this.salario += (this.salario * percentual / 100);
-        
-        tem q fazer nas subclasses;
+    public void aumentoSalarial(int percentual, float diferencial){
+        this.salario += (this.salario * percentual / 100) + diferencial;
     }
     
     public float getSalario(){

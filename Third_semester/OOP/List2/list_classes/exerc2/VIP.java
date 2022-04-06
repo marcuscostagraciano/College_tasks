@@ -16,7 +16,6 @@ public class VIP extends Ingresso{
         this.adicional = valorAdicional;
     }
     
-    @Override
     public double imprimeValor(){
         return super.imprimeValor() + this.adicional;
     }
