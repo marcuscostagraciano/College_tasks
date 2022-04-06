@@ -7,7 +7,7 @@ Currently on: 3rd
 
 - [x] First;
 - [x] Second;
-- [ ] Third;
+- [x] Third;
 - [ ] Fourth - _Halfway there;_
 - [ ] Fifth;
 - [ ] Sixth;
