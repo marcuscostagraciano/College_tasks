@@ -1,4 +1,4 @@
-package list_classes;
+package List1.lista_classes;
 
 /**
  *
@@ -38,4 +38,5 @@ public class Pessoa {
     public int getIdade(){return this.idade;}
     public double getAltura(){return this.altura;}
     public double getPeso(){return this.peso;}
+    
 }
