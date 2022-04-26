@@ -38,4 +38,32 @@ public class CCorrente {
     public void setSaldo(double saldo){
         this.saldo = saldo;
     }
+    
+    @Override
+    public String toString(){
+        return "Nome do cliente: " + cliente.getNome() + "\n" +
+               "CPF do cliente: " + cliente.getCpf();
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 79 * hash + this.numero;
+        return hash;
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final CCorrente other = (CCorrente) obj;
+        return this.numero == other.numero;
+    }
 }
