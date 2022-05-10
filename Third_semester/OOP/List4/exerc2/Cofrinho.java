@@ -49,8 +49,9 @@ public class Cofrinho {
        //Most basic: 
        double maxValue = 0;
        for (Moeda moeda: moedas){
-            if(moeda.getValor() > maxValue)
-            {maxValue = moeda.getValor();}
+            if(moeda.getValor() > maxValue){
+                maxValue = moeda.getValor();
+            }
        }
         
         return maxValue;
