@@ -5,7 +5,6 @@
 package List4.exerc2;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Collections;
 
 /**
  *
@@ -23,7 +22,7 @@ public class Cofrinho {
     }
     
     public double calcularTotal(){
-        int valor = 0;
+        double valor = 0;
         for (Moeda moeda: moedas){
             valor+= moeda.getValor();
         }
@@ -36,16 +35,14 @@ public class Cofrinho {
     }
     
     public int moedasPorValor(int valor){
-        return Collections.frequency(moedas, valor);
-                
-        /* Most basic:
         int count = 0;
         for (Moeda moeda: moedas){
-            if(moeda.getValor() == valor)
-            {count++;}
+            if(moeda.getValor() == valor){
+                count++;
+            }
         }
         
-        return count; */
+        return count;
     }
     
     public double maiorValor(){
