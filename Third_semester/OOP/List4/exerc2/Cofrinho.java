@@ -34,7 +34,7 @@ public class Cofrinho {
         return moedas.size();
     }
     
-    public int moedasPorValor(int valor){
+    public int moedasPorValor(double valor){
         int count = 0;
         for (Moeda moeda: moedas){
             if(moeda.getValor() == valor){
@@ -46,7 +46,6 @@ public class Cofrinho {
     }
     
     public double maiorValor(){
-       //Most basic: 
        double maxValue = 0;
        for (Moeda moeda: moedas){
             if(moeda.getValor() > maxValue){
