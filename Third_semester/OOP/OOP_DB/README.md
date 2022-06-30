@@ -5,3 +5,5 @@ Nessa atividade temos como objetivo converter o modelo lógico do Banco de Dados
 In this activity we have the objective of converting the of a database in an Object-oriented program
 
 Students: [Gianluca Starke](https://github.com/XerlockHomeless) & [Marcus Vinicius da Costa Graciano](https://github.com/marcuscostagraciano)
+
+(Side note: it is my first time using different branches so my bad if it looks kinda ugly)
