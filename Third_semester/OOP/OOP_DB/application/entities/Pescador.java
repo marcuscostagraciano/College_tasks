@@ -62,5 +62,4 @@ public class Pescador {
     public void setVencimentoLicenca(String vencimentoLicenca) {
         this.vencimentoLicenca = vencimentoLicenca;
     }    
-        
 }
