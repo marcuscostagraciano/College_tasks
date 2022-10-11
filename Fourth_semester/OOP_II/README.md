@@ -1,3 +1,3 @@
 OOP Project using Django:
 
-Students: @Garcia-Eric, @XerlockHomeless, @marcuscostagraciano
+Students: (Eric Garcia)[https://github.com/Garcia-Eric], @XerlockHomeless, @marcuscostagraciano
