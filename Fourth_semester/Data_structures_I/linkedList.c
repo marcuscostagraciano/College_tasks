@@ -10,7 +10,9 @@ Lista * init(void);
 Lista * insertStart(Lista *lista, int elemento);
 void print(Lista *lista);
 int inLista(Lista *lista, int element);
+Lista * busca(Lista *lista, int procurado);
 int indexOf(Lista *lista, int element);
+int get(Lista *lista, int element);
 
 int main() {
     Lista *lista;
@@ -18,9 +20,14 @@ int main() {
     lista = insertStart(lista, 15);
     lista = insertStart(lista, 20);
     lista = insertStart(lista, 30);
-    printf("inLista: %d\n", inLista(lista, 5));
-    printf("indexOf: %d\n", indexOf(lista, 15));
-    printf("f1: %d", lista -> info);
+    printf("inLista: %d\n", inLista(lista, 30));
+    printf("indexOf: %d\n", indexOf(lista, 30));
+    printf("first element: %d\n", lista -> info);
+    printf("getElement using index 0: %d\n", get(lista, 0));
+    
+    Lista * temp = busca(lista, 30);
+    if (!(temp == NULL))
+        printf("O elemento %d foi encontrado.\n", temp->info);
     
     
     return 0;
@@ -65,6 +72,17 @@ int inLista(Lista *lista, int element) {
 }
 
 
+Lista * busca(Lista *lista, int procurado) {
+    for (Lista *aux = lista; aux != NULL; aux = aux -> prox){
+        if (aux -> info == procurado){
+            return aux;
+        }
+    }
+    
+    return NULL;
+}
+
+
 int indexOf(Lista *lista, int element) {
     int count = 0;
     for (Lista *aux = lista; aux != NULL; aux = aux -> prox){
@@ -75,4 +93,15 @@ int indexOf(Lista *lista, int element) {
     }
     
     return 0;
+}
+
+
+int get(Lista *lista, int element) {
+    int count = 0;
+    for (Lista *aux = lista; aux != NULL; aux = aux -> prox){
+        if (count == element){
+            return aux -> info;
+        }
+        count++;
+    }
 }
