@@ -13,6 +13,8 @@ int inLista(Lista *lista, int element);
 Lista * busca(Lista *lista, int procurado);
 int indexOf(Lista *lista, int element);
 int get(Lista *lista, int element);
+Lista * retira(Lista *l, int v);
+void libera(Lista *l);
 
 int main() {
     Lista *lista;
@@ -20,15 +22,16 @@ int main() {
     lista = insertStart(lista, 15);
     lista = insertStart(lista, 20);
     lista = insertStart(lista, 30);
+    lista = insertStart(lista, 40);
+    lista = insertStart(lista, 50);
     printf("inLista: %d\n", inLista(lista, 30));
     printf("indexOf: %d\n", indexOf(lista, 30));
     printf("first element: %d\n", lista -> info);
     printf("getElement using index 0: %d\n", get(lista, 0));
     
-    Lista * temp = busca(lista, 30);
-    if (!(temp == NULL))
-        printf("O elemento %d foi encontrado.\n", temp->info);
-    
+    lista = retira(lista, 15);
+    lista = retira(lista, 30);
+    libera(lista);
     
     return 0;
 }
@@ -103,5 +106,41 @@ int get(Lista *lista, int element) {
             return aux -> info;
         }
         count++;
+    }
+}
+
+
+Lista * retira(Lista * l, int v){
+    Lista *ant = NULL;
+    Lista *p = l;
+   
+    
+    while (p != NULL && p->info != v){
+        ant = p;
+        p = p->prox;
+    }
+    if (p == NULL)
+        return l;
+        
+    if (ant == NULL)
+        l = p->prox;
+    else{
+        ant->prox = p->prox;
+    }
+    
+    free(p);
+    
+    return l;
+}
+
+
+void libera(Lista *l) {
+    Lista *p = l;
+    Lista *t;
+    
+    while (!(p == NULL)) {
+        t = p -> prox;  // Guarda a referência para o próximo elemento
+        free(p);        // Libera a memória apontada por P
+        p = t;          // Aponta para o próximo elemento
     }
 }
