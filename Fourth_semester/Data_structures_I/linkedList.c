@@ -8,29 +8,37 @@ typedef struct lista {
 
 Lista * init(void);
 Lista * insertStart(Lista *lista, int elemento);
+int vazia(Lista *l);
 void print(Lista *lista);
 int inLista(Lista *lista, int element);
 Lista * busca(Lista *lista, int procurado);
 int indexOf(Lista *lista, int element);
 int get(Lista *lista, int element);
 Lista * retira(Lista *l, int v);
+Lista * insereOrdenado(Lista *l, int i);
 void libera(Lista *l);
 
 int main() {
     Lista *lista;
     lista = init();
+    /*
     lista = insertStart(lista, 15);
     lista = insertStart(lista, 20);
     lista = insertStart(lista, 30);
     lista = insertStart(lista, 40);
     lista = insertStart(lista, 50);
+    */
+    lista = insereOrdenado(lista, 5);
+    lista = insereOrdenado(lista, 6);
+    lista = insereOrdenado(lista, 3);
+    lista = insereOrdenado(lista, 4);
+    
     printf("inLista: %d\n", inLista(lista, 30));
     printf("indexOf: %d\n", indexOf(lista, 30));
     printf("first element: %d\n", lista -> info);
     printf("getElement using index 0: %d\n", get(lista, 0));
+    print(lista);
     
-    lista = retira(lista, 15);
-    lista = retira(lista, 30);
     libera(lista);
     
     return 0;
@@ -42,12 +50,43 @@ Lista * init(void) {
 }
 
 
+int vazia(Lista *l){
+    return (l == NULL);
+}
+
+
 Lista * insertStart(Lista *lista, int elemento) {
     Lista *novo = (Lista *) malloc(sizeof(Lista));
     novo -> info = elemento;
     novo -> prox = lista;
     
     return novo;
+}
+
+
+Lista * insereOrdenado(Lista *l, int i) {
+    Lista * p = l, *ant = NULL;
+    Lista *novo = (Lista *) malloc(sizeof(Lista));
+    novo -> info = i;
+    
+    if (vazia(l)) {
+        novo -> prox = NULL;
+        return novo;
+    }
+    
+    while (!(p == NULL) && p -> info < i) {
+        ant = p;
+        p = p -> prox;
+    }
+    
+    if (ant == NULL) {
+        novo -> prox = p;
+        return novo;
+    } else {
+        ant -> prox = novo;
+        novo -> prox = p;
+        return l;
+    }
 }
 
 
@@ -73,7 +112,6 @@ int inLista(Lista *lista, int element) {
     
     return 0;
 }
-
 
 Lista * busca(Lista *lista, int procurado) {
     for (Lista *aux = lista; aux != NULL; aux = aux -> prox){
