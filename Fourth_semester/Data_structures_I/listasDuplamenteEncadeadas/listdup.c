@@ -56,3 +56,28 @@ void imprime(ListaDUPLA *l){
     
     printf("NULL\n");
 }
+
+
+int vazia(ListaDUPLA *l) {
+    return (l == NULL);    
+}
+
+
+ListaDUPLA* insere_ordenado (ListaDUPLA *l, int v) {
+
+}
+
+
+ListaDUPLA* insere_ordenado (ListaDUPLA *l, int v) {
+    
+}
+
+
+void libera(ListaDUPLA *l) {
+    
+}
+
+
+void imprime_inverso(ListaDUPLA *l) {
+    
+}
