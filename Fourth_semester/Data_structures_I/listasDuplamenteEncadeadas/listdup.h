@@ -18,7 +18,6 @@ ListaDUPLA* retira (ListaDUPLA* l, int v);
 
 void imprime(ListaDUPLA *l);
 
-/*
 int vazia(ListaDUPLA *l);
 
 ListaDUPLA* insere_ordenado (ListaDUPLA *l, int v);
@@ -26,5 +25,3 @@ ListaDUPLA* insere_ordenado (ListaDUPLA *l, int v);
 void libera(ListaDUPLA *l);
 
 void imprime_inverso(ListaDUPLA *l);
-
-*/
