@@ -1,11 +1,11 @@
 #include "listdup.h"
 
-ListaDUPLA * inicializa(void){
+ListaDUPLA * inicializa(void) {
 	return NULL;
 }
 
 
-ListaDUPLA * insere (ListaDUPLA* l, int v){
+ListaDUPLA * insere (ListaDUPLA* l, int v) {
 	ListaDUPLA *novo = (ListaDUPLA*) malloc(sizeof(ListaDUPLA));
     novo -> info = v;
     novo -> prox = l;
@@ -17,7 +17,7 @@ ListaDUPLA * insere (ListaDUPLA* l, int v){
 }
 
 
-ListaDUPLA * busca (ListaDUPLA* l, int v){
+ListaDUPLA * busca (ListaDUPLA* l, int v) {
 	ListaDUPLA* p;
     for (p = l; !(p == NULL); p = p -> prox)
         if (p -> info == v)
@@ -41,15 +41,14 @@ ListaDUPLA * retira (ListaDUPLA* l, int v) {
         p -> prox -> ant = p -> ant;
 
     free(p);
-    
     return l;
 }
 
 
-void imprime(ListaDUPLA *l){
+void imprime(ListaDUPLA *l) {
     ListaDUPLA * aux = l;
     
-    while(!(aux == NULL)){
+    while(!(aux == NULL)) {
         printf("[%d] --> ", aux->info);
         aux = aux->prox;
     }
@@ -68,23 +67,29 @@ ListaDUPLA* insere_ordenado (ListaDUPLA *l, int v) {
     ListaDUPLA *novo = (ListaDUPLA *) malloc(sizeof(ListaDUPLA));
         novo -> info = v;
     
-    if (l == NULL){
+    if (l == NULL) {
         novo -> ant = NULL;
         novo -> prox = NULL;
         return novo;
     }
     
-    while (!(p == NULL) && (p -> info < v)){
+    while (!(p == NULL) && (p -> info < v)) {
         ant = p;
         p = p -> prox;
     }
     
     if (ant == NULL) {
-        novo -> ant = NULL;
+        p -> ant = novo;
+        
+        novo -> ant = ant;        
         novo -> prox = p;
         return  novo;
-    } else {
+    } 
+    else {
+        if (!(p == NULL))
+          p -> ant = novo;
         ant -> prox = novo;
+        
         novo -> ant = ant;
         novo -> prox = p;
         return l;
@@ -96,7 +101,7 @@ void libera(ListaDUPLA *l) {
     ListaDUPLA * p = l;
     ListaDUPLA * t;
     
-    while(!(p == NULL)){
+    while(!(p == NULL)) {
         t = p -> prox;
         free(p);
         p = t;
@@ -105,5 +110,22 @@ void libera(ListaDUPLA *l) {
 
 
 void imprime_inverso(ListaDUPLA *l) {
+    ListaDUPLA *aux = ultimoElemento(l);
     
+    while(!(aux == NULL)) {
+        printf("[%d] --> ", aux -> info);
+        aux = aux -> ant;
+    }
+    
+    printf("NULL\n");
+}
+
+
+ListaDUPLA * ultimoElemento(ListaDUPLA *l) {
+    ListaDUPLA * aux = l;
+    
+    while (!(aux -> prox == NULL))
+        aux = aux -> prox;
+    
+    return aux;
 }
