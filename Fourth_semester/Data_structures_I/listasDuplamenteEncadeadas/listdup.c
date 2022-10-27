@@ -64,17 +64,43 @@ int vazia(ListaDUPLA *l) {
 
 
 ListaDUPLA* insere_ordenado (ListaDUPLA *l, int v) {
-
-}
-
-
-ListaDUPLA* insere_ordenado (ListaDUPLA *l, int v) {
+    ListaDUPLA * p = l, *ant = NULL;
+    ListaDUPLA *novo = (ListaDUPLA *) malloc(sizeof(ListaDUPLA));
+        novo -> info = v;
     
+    if (l == NULL){
+        novo -> ant = NULL;
+        novo -> prox = NULL;
+        return novo;
+    }
+    
+    while (!(p == NULL) && (p -> info < v)){
+        ant = p;
+        p = p -> prox;
+    }
+    
+    if (ant == NULL) {
+        novo -> ant = NULL;
+        novo -> prox = p;
+        return  novo;
+    } else {
+        ant -> prox = novo;
+        novo -> ant = ant;
+        novo -> prox = p;
+        return l;
+    }
 }
 
 
 void libera(ListaDUPLA *l) {
+    ListaDUPLA * p = l;
+    ListaDUPLA * t;
     
+    while(!(p == NULL)){
+        t = p -> prox;
+        free(p);
+        p = t;
+    }
 }
 
 
