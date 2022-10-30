@@ -129,3 +129,45 @@ ListaDUPLA * ultimoElemento(ListaDUPLA *l) {
     
     return aux;
 }
+
+
+ListaDUPLA * append(ListaDUPLA *l, int elemento) {
+    ListaDUPLA * ultimo = ultimoElemento(l);
+    ListaDUPLA * novo = (ListaDUPLA *) malloc(sizeof(ListaDUPLA));
+        novo -> ant = ultimo;
+        novo -> info = elemento;
+        novo -> prox = NULL;
+    ultimo -> prox = novo;
+    
+    return l;
+}
+
+int count(ListaDUPLA *l, int elemento) {
+    ListaDUPLA * aux;
+    int countElemento = 0;
+    
+    for (aux = l; !(aux == NULL); aux = aux -> prox)
+        if (aux -> info == elemento)
+            countElemento++;
+
+    return countElemento;
+}
+
+void * extend(ListaDUPLA *l1, ListaDUPLA *l2) {
+    ListaDUPLA * aux = ultimoElemento(l1);
+    aux -> prox = l2;
+    l2 -> ant = aux;
+    
+    return l1;
+} 
+
+int indexOf(ListaDUPLA *l, int elemento) {
+    ListaDUPLA * aux;
+    int index = 0;
+    
+    for (aux = l; !(aux == NULL); aux = aux -> prox) {
+        if (aux -> info == elemento)
+            return index;
+        index++;
+    }
+}
