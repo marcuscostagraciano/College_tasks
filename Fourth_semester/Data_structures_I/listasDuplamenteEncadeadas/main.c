@@ -1,7 +1,7 @@
 #include "listdup.h"
 
 int main(void) {
-    
+    /*
 	ListaDUPLA *l;
 	ListaDUPLA *achou;
 	l = inicializa();
@@ -26,11 +26,11 @@ int main(void) {
 	printf("\nImpressão inversa dos elementos da lista: \n");
 	imprime_inverso(l);
 	printf("Qtd de números %d: %d\n\n", 2, count(l, 2));
-    
+    */
     
     ListaDUPLA *l1 = inicializa(), *l2 = inicializa(), *l1ext = inicializa();
-    l1 = insere_ordenado(l1, 0); l1 = insere_ordenado(l1, 1);
-    l2 = insere_ordenado(l2, 2); l2 = insere_ordenado(l2, 3);
+    l1 = insere_ordenado(l1, 0); l1 = insere_ordenado(l1, 2);
+    l2 = insere_ordenado(l2, 2); l2 = insere_ordenado(l2, 4);
     
 	printf("l1: \n");
 	imprime(l1);
@@ -40,9 +40,14 @@ int main(void) {
 	printf("Posição do 2 na l2: %d\n", indexOf(l2, 2));
 	
 	printf("l1 extendida: \n");
-	extend(l1, l2);
+ 	extend(l1, l2);
 	imprime(l1);
-	printf("Posição do 2 na l1: %d\n", indexOf(l1ext, 2));
+    
+    ListaDUPLA * l3 = inicializa();
+    l3 = slice(l1, 4, 0);
+    
+    printf("l3: \n");
+	imprime(l3);
     
 	return 0;
 }
