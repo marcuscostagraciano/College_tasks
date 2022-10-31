@@ -38,7 +38,7 @@ ListaDUPLA * ultimoElemento(ListaDUPLA *l);
 // Imprime os elementos presentes na lista (do último pro primeiro).
 void imprime_inverso(ListaDUPLA *l);
 
-// Retorna o número de aparições de um elemento na lista.
+// Retorna o número de vezes que um elemento aparece na lista.
 int count(ListaDUPLA *l, int elemento);
 
 // Adiciona os elementos da lista 2 na lista 1.
@@ -46,6 +46,12 @@ void * extend(ListaDUPLA *l1, ListaDUPLA *l2);
 
 // Retorna o índice do primeiro elemento com o valor especificado.
 int indexOf(ListaDUPLA *l, int elemento);
+
+// 
+ListaDUPLA * slice(ListaDUPLA *l, int startingPos, int endingPos);
+
+// Retorna o valor de um elemento, com base em sua posição.
+int getElementoByIndex(ListaDUPLA *l, int index);
 
 // 
 void libera(ListaDUPLA *l);
