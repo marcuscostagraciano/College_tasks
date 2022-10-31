@@ -1,53 +1,201 @@
 #include "listdup.h"
 
-int main(void) {
-    /*
-	ListaDUPLA *l;
-	ListaDUPLA *achou;
-	l = inicializa();
-    
-	l = insere_ordenado(l, 10);
-	l = insere_ordenado(l, 15);
-	l = insere_ordenado(l, 20);
-	l = insere_ordenado(l, 30);
-	l = insere_ordenado(l, 40);
-	l = insere_ordenado(l, 50);
+ListaDUPLA * inicializa(void) {
+	return NULL;
+}
 
-	l = insere_ordenado(l, 5);
-	l = insere_ordenado(l, 1);
-	l = insere_ordenado(l, 3);
-	l = insere_ordenado(l, 0);
-	l = append(l, 5);
-	l = insere_ordenado(l, 2);
-	l = insere_ordenado(l, 2);
+ListaDUPLA * insere (ListaDUPLA* l, int v) {
+	ListaDUPLA *novo = (ListaDUPLA*) malloc(sizeof(ListaDUPLA));
+    novo -> info = v;
+    novo -> prox = l;
+    novo -> ant = NULL;
 
-	printf("Impressão do elementos da lista: \n");
-	imprime(l);
-	printf("\nImpressão inversa dos elementos da lista: \n");
-	imprime_inverso(l);
-	printf("Qtd de números %d: %d\n\n", 2, count(l, 2));
-    */
+    if (!(l == NULL))
+        l -> ant = novo;
+    return novo;
+}
+
+ListaDUPLA * busca (ListaDUPLA* l, int v) {
+	ListaDUPLA* p;
+    for (p = l; !(p == NULL); p = p -> prox)
+        if (p -> info == v)
+            return p;
+            
+    return NULL; 
+}
+
+ListaDUPLA * retira (ListaDUPLA* l, int v) {
+	ListaDUPLA* p = busca(l,v);
     
-    ListaDUPLA *l1 = inicializa(), *l2 = inicializa(), *l1ext = inicializa();
-    l1 = insere_ordenado(l1, 0); l1 = insere_ordenado(l1, 2);
-    l2 = insere_ordenado(l2, 2); l2 = insere_ordenado(l2, 4);
+	if (p == NULL)
+        return l; 
+        
+    if (l == p) 
+        l = p -> prox;
+    else
+        p -> ant -> prox = p -> prox;
+
+    if (!(p -> prox == NULL)) 
+        p -> prox -> ant = p -> ant;
+
+    free(p);
+    return l;
+}
+
+void imprime(ListaDUPLA *l) {
+    ListaDUPLA * aux = l;
     
-	printf("l1: \n");
-	imprime(l1);
-	
-	printf("l2: \n");
-	imprime(l2);
-	printf("Posição do 2 na l2: %d\n", indexOf(l2, 2));
-	
-	printf("l1 extendida: \n");
- 	extend(l1, l2);
-	imprime(l1);
+    while(!(aux == NULL)) {
+        printf("[%d] --> ", aux->info);
+        aux = aux->prox;
+    }
     
-    ListaDUPLA * l3 = inicializa();
-    l3 = slice(l1, 4, 0);
+    printf("NULL\n");
+}
+
+int vazia(ListaDUPLA *l) {
+    return (l == NULL);    
+}
+
+ListaDUPLA* insere_ordenado (ListaDUPLA *l, int v) {
+    ListaDUPLA * p = l, *ant = NULL;
+    ListaDUPLA *novo = (ListaDUPLA *) malloc(sizeof(ListaDUPLA));
+        novo -> info = v;
     
-    printf("l3: \n");
-	imprime(l3);
+    if (l == NULL) {
+        novo -> ant = NULL;
+        novo -> prox = NULL;
+        return novo;
+    }
     
-	return 0;
+    while (!(p == NULL) && (p -> info < v)) {
+        ant = p;
+        p = p -> prox;
+    }
+    
+    if (ant == NULL) {
+        p -> ant = novo;
+        
+        novo -> ant = ant;        
+        novo -> prox = p;
+        return  novo;
+    } else {
+        if (!(p == NULL))
+          p -> ant = novo;
+        ant -> prox = novo;
+        
+        novo -> ant = ant;
+        novo -> prox = p;
+        return l;
+    }
+}
+
+void libera(ListaDUPLA *l) {
+    ListaDUPLA * p = l;
+    ListaDUPLA * t;
+    
+    while(!(p == NULL)) {
+        t = p -> prox;
+        free(p);
+        p = t;
+    }
+}
+
+void imprime_inverso(ListaDUPLA *l) {
+    ListaDUPLA *aux = ultimoElemento(l);
+    
+    while(!(aux == NULL)) {
+        printf("[%d] --> ", aux -> info);
+        aux = aux -> ant;
+    }
+    
+    printf("NULL\n");
+}
+
+ListaDUPLA * ultimoElemento(ListaDUPLA *l) {
+    ListaDUPLA * aux = l;
+    
+    while (!(aux -> prox == NULL))
+        aux = aux -> prox;
+    
+    return aux;
+}
+
+ListaDUPLA * append(ListaDUPLA *l, int elemento) {
+    if (l == NULL)
+        l = insere(l, elemento);
+    
+    else {
+        ListaDUPLA * ultimo = ultimoElemento(l);
+        ListaDUPLA * novo = (ListaDUPLA *) malloc(sizeof(ListaDUPLA));
+            novo -> ant = ultimo;
+            novo -> info = elemento;
+            novo -> prox = NULL;
+        ultimo -> prox = novo;
+    }
+        
+    return l;
+}
+
+int count(ListaDUPLA *l, int elemento) {
+    ListaDUPLA * aux;
+    int countElemento = 0;
+    
+    for (aux = l; !(aux == NULL); aux = aux -> prox)
+        if (aux -> info == elemento)
+            countElemento++;
+
+    return countElemento;
+}
+
+void * extend(ListaDUPLA *l1, ListaDUPLA *l2) {
+    ListaDUPLA * aux = ultimoElemento(l1);
+    aux -> prox = l2;
+    l2 -> ant = aux;
+    
+    return l1;
+} 
+
+int indexOf(ListaDUPLA *l, int elemento) {
+    ListaDUPLA * aux;
+    int index = 0;
+    
+    for (aux = l; !(aux == NULL); aux = aux -> prox) {
+        if (aux -> info == elemento)
+            return index;
+        index++;
+    }
+}
+
+int getElementoByIndex(ListaDUPLA *l, int index) {
+    ListaDUPLA * aux;
+    int curIndex = 0;
+    
+    for (aux = l; !(aux == NULL); aux = aux -> prox) {
+        if (curIndex == index)
+            return aux -> info;
+        curIndex++;
+    }
+    
+    // Retorna -1 para sinalizar erro, já que a lista não tem um index -1.
+    exit(-1);
+}
+
+ListaDUPLA * slice(ListaDUPLA *l, int startingPos, int endingPos) {
+    ListaDUPLA * novaLista = inicializa();
+    
+    if (startingPos > endingPos) {
+        int temp = startingPos;
+        startingPos = endingPos;
+        endingPos = temp;
+        
+        for (int i = startingPos; i < endingPos; i++)
+            novaLista = insere(novaLista, getElementoByIndex(l, i));
+                
+    } else {
+        for (int i = startingPos; i < endingPos; i++)
+            novaLista = append(novaLista, getElementoByIndex(l, i));
+    }
+    
+    return novaLista;
 }
