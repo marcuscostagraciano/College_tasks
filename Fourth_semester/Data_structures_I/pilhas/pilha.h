@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+struct pilha{
+  int info;
+  struct pilha *prox;
+};
+
 typedef struct pilha Pilha;
 
 // Inicializa uma pilha.
@@ -20,3 +25,6 @@ Pilha * push(Pilha *p, int v);
 
 // Retira o elemento do topo da pilha.
 int pop(Pilha **p);
+
+// Retorna o elemento do topo da pilha.
+Pilha * ultimoElemento(Pilha *p);
