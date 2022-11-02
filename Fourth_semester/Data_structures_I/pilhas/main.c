@@ -8,7 +8,7 @@ int main(){
     p = push(p, 40);
     
     imprime(p);
-    printf("Valor removido do topo: %d", pop(&p));
+    printf("Valor removido do topo: %d\n", pop(&p));
     imprime(p);
     libera(p);
     
