@@ -42,16 +42,15 @@ Pilha * push(Pilha *p, int v) {
     return novo;
 }
 
-// WIP
 int pop(Pilha **p) {
-    if (!(p == NULL)) {
-        while (!(p -> prox == NULL))
-            p = p -> prox;
-        
-        free(p -> prox);
-        p -> prox == NULL;
-        return (p -> info);
-    }
+    Pilha *aux = *p;
+    while (aux -> prox -> prox != NULL)
+      aux = aux -> prox;
+    
+    int valorRetirado = aux -> prox -> info;
+    free(aux -> prox);
+    aux -> prox = NULL;
+    return valorRetirado;
 }
 
 Pilha * ultimoElemento(Pilha *p) {
