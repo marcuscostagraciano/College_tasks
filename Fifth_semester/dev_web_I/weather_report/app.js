@@ -1,5 +1,5 @@
-const API_KEY = "58ebc43d0f5b149df0f154cd9dd0ba78";
-const PIXABAY_KEY = "34735911-7d85964b90bff37d61ffde2cc";
+const API_KEY = "";
+const PIXABAY_KEY = "";
 const city_input = document.querySelector("#city_input");
 const form = document.forms.search;
 //const submitBtn = document.querySelector("#submit");
