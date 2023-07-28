@@ -1,0 +1,109 @@
+body { 
+    background-image: url("images/bgtile-css.gif");
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 20px 40px;
+}
+
+a:link {
+    color: #336699;
+}
+
+a:visited {
+    color: #666666;
+}
+
+a:hover {
+    color: #663366;
+    text-decoration: none;
+}
+
+a:active {
+    color: #663300;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 36px;
+    color: #448888;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    color: #226666;
+}
+
+h3 {
+    font-size: 14px;
+    color: #333333;
+}
+
+p {
+    line-height: 1.4em;
+
+    text-align: justify;
+    /* O nome disso é TOC */
+}
+
+dt {
+    color: #333333;
+    font-weight: bold;
+}
+
+dd {
+    font-style: italic;
+    margin: 0.5em 0 1.5em;
+}
+
+dl {
+    margin: 1.5em;
+}
+
+blockquote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-style: italic;
+    margin: 1em 3em;
+}
+
+.byline {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #666666;
+}
+
+.figure {
+    margin-left: 20px;
+    float: right;
+}
+
+.figure p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #666666;
+    margin: 0;
+}
+
+#toc {
+    background-color: #FFFFFF;
+    width: 200px;
+    padding: 0 20px;
+    margin: 30px 1px;
+    border-color: #666666;
+    border-style: solid;    
+    
+    border-width: 0px;
+    border-right: 6px solid #666666;
+    border-bottom: 6px solid #666666;
+
+}
+
+#toc ol, ul {
+    padding-left: 2em;
+}

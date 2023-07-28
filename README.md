@@ -3,13 +3,13 @@
 As the name suggests, the aim of this repository is to save my homework done in college, something like a journal :p
 
 ## Semesters:
-Currently on: 3rd
+Currently on: 4th
 
 - [x] First;
 - [x] Second;
 - [x] Third;
-- [ ] Fourth - _Halfway there;_
-- [ ] Fifth;
+- [x] Fourth - _Halfway there;_
+- [x] Fifth;
 - [ ] Sixth;
 - [ ] Seventh;
 - [ ] Eighth - _The last one_
