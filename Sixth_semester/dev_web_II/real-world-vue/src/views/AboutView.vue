@@ -2,9 +2,9 @@
 </script>
 
 <template>
-    <div class="about">
-        <h1>This is an about page</h1>
-    </div>
+  <div class="about">
+    <h1>A site for events to better the world.</h1>
+  </div>
 </template>
   
 <style>
