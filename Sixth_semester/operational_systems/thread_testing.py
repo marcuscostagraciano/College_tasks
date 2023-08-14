@@ -17,7 +17,6 @@ def io_bound(sec):
     
     print(f"{pid} * {processName} * {threadName} \     ---> Finished sleeping...")
 
-  
 
 def cpu_bound(n):
     pid = os.getpid()
@@ -26,11 +25,9 @@ def cpu_bound(n):
     processName = current_process().name
 
     print(f"{pid} * {processName} * {threadName} \     ---> Start counting...")    
-    while n>0:
+    while n > 0:
         n -= 1
-
     print(f"{pid} * {processName} * {threadName} \     ---> Finished counting...",n)
-
   
 
 if __name__=="__main__":
@@ -38,8 +35,10 @@ if __name__=="__main__":
     print('----------------- Sem multiprocessamento (processos tipo I/O bound)')
     start = time.time()
 
-    io_bound(SLEEP)
-    io_bound(SLEEP)
+    # io_bound(SLEEP)
+    # io_bound(SLEEP)
+    cpu_bound(SLEEP)
+    cpu_bound(SLEEP)
 
     end = time.time()
     print(f'Duracao em segundos = {end - start:.5f}\n')
@@ -60,8 +59,10 @@ if __name__=="__main__":
     print('----------------- Com 1 processo e 2 threads (processos tipo I/O bound)')
     start = time.time()
     
-    t1 = Thread(target = io_bound, args =(SLEEP, ))
-    t2 = Thread(target = io_bound, args =(SLEEP, ))
+    # t1 = Thread(target = io_bound, args =(SLEEP, ))
+    # t2 = Thread(target = io_bound, args =(SLEEP, ))
+    t1 = Thread(target = cpu_bound, args =(SLEEP, ))
+    t2 = Thread(target = cpu_bound, args =(SLEEP, ))
     
     t1.start()
     t2.start()
