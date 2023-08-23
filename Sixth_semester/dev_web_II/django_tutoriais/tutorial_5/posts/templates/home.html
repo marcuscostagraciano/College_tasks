@@ -11,7 +11,7 @@
     <body>
         <h1>Message boad homepage</h1>
         <ul>
-            {% for post in object_list %}
+            {% for post in all_posts_lists %}
                 <li>{{ post.text }}</li>
             {% endfor %}
         </ul>
