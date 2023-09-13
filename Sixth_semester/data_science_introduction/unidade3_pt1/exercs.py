@@ -18,7 +18,6 @@ all_data = {
         }
 }
 
-
 @dataclass
 class Dados:
     """  """
@@ -41,12 +40,12 @@ class Dados:
             (self.largura_classe - 1)
 
 
-dados_exerc1 = Dados(all_data['ex1']['data'], all_data['ex1']['num_classes'])
+dados_exerc = Dados(all_data['ex1']['data'], all_data['ex1']['num_classes'])
 
-amostras = dados_exerc1.amostras
-menor_valor = dados_exerc1.menor_valor
-ultimo_limite_superior = dados_exerc1.get_ultimo_limite_superior()
-largura_classes = dados_exerc1.largura_classe
+amostras = dados_exerc.amostras
+menor_valor = dados_exerc.menor_valor
+ultimo_limite_superior = dados_exerc.get_ultimo_limite_superior()
+largura_classes = dados_exerc.largura_classe
 
 classes = list(range(menor_valor - largura_classes,
                      ultimo_limite_superior,
