@@ -18,9 +18,9 @@ all_data = {
         }
 }
 
+
 @dataclass
 class Dados:
-    """  """
     amostras: list[int]
     num_classes: int
     menor_valor: int = field(init=False)
