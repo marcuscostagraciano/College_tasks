@@ -1,13 +1,14 @@
 from django.db import models
 from django.urls import reverse
 
+
 # Create your models here.
 class Product(models.Model):
     name = models.CharField('Name', max_length=100)
     description = models.TextField('Description', blank=True)    
     price = models.DecimalField('Price', decimal_places=2, max_digits=8)
     created = models.DateTimeField('Created', auto_now_add=True)
-    changed = models.DateTimeField('Changed', auto_created=True)
+    changed = models.DateTimeField('Changed', auto_created=True, null=True)
 
     class Meta:
         ordering = ['name']
