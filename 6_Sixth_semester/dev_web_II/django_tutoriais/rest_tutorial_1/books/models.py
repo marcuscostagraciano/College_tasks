@@ -8,4 +8,4 @@ class Book(models.Model):
     isbn = models.CharField(max_length=13)
     
     def __str__(self) -> str:
-        return self.title  
+        return f"{self.title}: {self.subtitle}"
