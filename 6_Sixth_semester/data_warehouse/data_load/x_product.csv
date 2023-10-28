@@ -1,0 +1,505 @@
+﻿ProductKey;category;subcategory;model
+1;NULL;NULL;NULL
+2;NULL;NULL;NULL
+3;NULL;NULL;NULL
+4;NULL;NULL;NULL
+316;NULL;NULL;NULL
+317;NULL;NULL;NULL
+318;NULL;NULL;NULL
+319;NULL;NULL;NULL
+320;NULL;NULL;NULL
+321;NULL;NULL;NULL
+322;NULL;NULL;NULL
+323;NULL;NULL;NULL
+324;NULL;NULL;NULL
+325;NULL;NULL;NULL
+326;NULL;NULL;NULL
+327;NULL;NULL;NULL
+328;NULL;NULL;NULL
+329;NULL;NULL;NULL
+330;NULL;NULL;NULL
+331;NULL;NULL;NULL
+332;NULL;NULL;NULL
+341;NULL;NULL;NULL
+342;NULL;NULL;NULL
+343;NULL;NULL;NULL
+344;NULL;NULL;NULL
+345;NULL;NULL;NULL
+346;NULL;NULL;NULL
+347;NULL;NULL;NULL
+348;NULL;NULL;NULL
+349;NULL;NULL;NULL
+350;NULL;NULL;NULL
+351;NULL;NULL;NULL
+352;NULL;NULL;NULL
+355;NULL;NULL;NULL
+356;NULL;NULL;NULL
+357;NULL;NULL;NULL
+358;NULL;NULL;NULL
+359;NULL;NULL;NULL
+360;NULL;NULL;NULL
+361;NULL;NULL;NULL
+362;NULL;NULL;NULL
+363;NULL;NULL;NULL
+364;NULL;NULL;NULL
+365;NULL;NULL;NULL
+366;NULL;NULL;NULL
+367;NULL;NULL;NULL
+368;NULL;NULL;NULL
+369;NULL;NULL;NULL
+370;NULL;NULL;NULL
+371;NULL;NULL;NULL
+372;NULL;NULL;NULL
+373;NULL;NULL;NULL
+374;NULL;NULL;NULL
+375;NULL;NULL;NULL
+376;NULL;NULL;NULL
+377;NULL;NULL;NULL
+378;NULL;NULL;NULL
+379;NULL;NULL;NULL
+380;NULL;NULL;NULL
+381;NULL;NULL;NULL
+382;NULL;NULL;NULL
+383;NULL;NULL;NULL
+384;NULL;NULL;NULL
+385;NULL;NULL;NULL
+386;NULL;NULL;NULL
+387;NULL;NULL;NULL
+388;NULL;NULL;NULL
+389;NULL;NULL;NULL
+390;NULL;NULL;NULL
+391;NULL;NULL;NULL
+392;NULL;NULL;NULL
+393;NULL;NULL;NULL
+394;NULL;NULL;NULL
+395;NULL;NULL;NULL
+396;NULL;NULL;NULL
+397;NULL;NULL;NULL
+398;NULL;NULL;NULL
+399;NULL;NULL;NULL
+400;NULL;NULL;NULL
+401;NULL;NULL;NULL
+402;NULL;NULL;NULL
+403;NULL;NULL;NULL
+404;NULL;NULL;NULL
+405;NULL;NULL;NULL
+406;NULL;NULL;NULL
+407;NULL;NULL;NULL
+408;NULL;NULL;NULL
+409;NULL;NULL;NULL
+410;NULL;NULL;NULL
+411;NULL;NULL;NULL
+412;NULL;NULL;NULL
+413;NULL;NULL;NULL
+414;NULL;NULL;NULL
+415;NULL;NULL;NULL
+416;NULL;NULL;NULL
+417;NULL;NULL;NULL
+418;NULL;NULL;NULL
+419;NULL;NULL;NULL
+420;NULL;NULL;NULL
+421;NULL;NULL;NULL
+422;NULL;NULL;NULL
+423;NULL;NULL;NULL
+424;NULL;NULL;NULL
+425;NULL;NULL;NULL
+426;NULL;NULL;NULL
+427;NULL;NULL;NULL
+428;NULL;NULL;NULL
+429;NULL;NULL;NULL
+430;NULL;NULL;NULL
+431;NULL;NULL;NULL
+432;NULL;NULL;NULL
+433;NULL;NULL;NULL
+434;NULL;NULL;NULL
+435;NULL;NULL;NULL
+436;NULL;NULL;NULL
+437;NULL;NULL;NULL
+438;NULL;NULL;NULL
+439;NULL;NULL;NULL
+440;NULL;NULL;NULL
+441;NULL;NULL;NULL
+442;NULL;NULL;NULL
+443;NULL;NULL;NULL
+444;NULL;NULL;NULL
+445;NULL;NULL;NULL
+446;NULL;NULL;NULL
+447;NULL;NULL;NULL
+448;NULL;NULL;NULL
+449;NULL;NULL;NULL
+450;NULL;NULL;NULL
+451;NULL;NULL;NULL
+452;NULL;NULL;NULL
+453;NULL;NULL;NULL
+454;NULL;NULL;NULL
+455;NULL;NULL;NULL
+456;NULL;NULL;NULL
+457;NULL;NULL;NULL
+458;NULL;NULL;NULL
+459;NULL;NULL;NULL
+460;NULL;NULL;NULL
+461;NULL;NULL;NULL
+462;NULL;NULL;NULL
+463;NULL;NULL;NULL
+464;NULL;NULL;NULL
+465;NULL;NULL;NULL
+466;NULL;NULL;NULL
+467;NULL;NULL;NULL
+468;NULL;NULL;NULL
+469;NULL;NULL;NULL
+470;NULL;NULL;NULL
+471;NULL;NULL;NULL
+472;NULL;NULL;NULL
+473;NULL;NULL;NULL
+474;NULL;NULL;NULL
+475;NULL;NULL;NULL
+476;NULL;NULL;NULL
+477;NULL;NULL;NULL
+478;NULL;NULL;NULL
+479;NULL;NULL;NULL
+480;NULL;NULL;NULL
+481;NULL;NULL;NULL
+482;NULL;NULL;NULL
+483;NULL;NULL;NULL
+484;NULL;NULL;NULL
+485;NULL;NULL;NULL
+486;NULL;NULL;NULL
+487;NULL;NULL;NULL
+488;NULL;NULL;NULL
+489;NULL;NULL;NULL
+490;NULL;NULL;NULL
+491;NULL;NULL;NULL
+492;NULL;NULL;NULL
+493;NULL;NULL;NULL
+494;NULL;NULL;NULL
+495;NULL;NULL;NULL
+496;NULL;NULL;NULL
+497;NULL;NULL;NULL
+504;NULL;NULL;NULL
+505;NULL;NULL;NULL
+506;NULL;NULL;NULL
+507;NULL;NULL;NULL
+508;NULL;NULL;NULL
+509;NULL;NULL;NULL
+510;NULL;NULL;NULL
+511;NULL;NULL;NULL
+512;NULL;NULL;NULL
+513;NULL;NULL;NULL
+514;NULL;NULL;NULL
+515;NULL;NULL;NULL
+516;NULL;NULL;NULL
+517;NULL;NULL;NULL
+518;NULL;NULL;NULL
+519;NULL;NULL;NULL
+520;NULL;NULL;NULL
+521;NULL;NULL;NULL
+522;NULL;NULL;NULL
+523;NULL;NULL;NULL
+524;NULL;NULL;NULL
+525;NULL;NULL;NULL
+526;NULL;NULL;NULL
+527;NULL;NULL;NULL
+528;NULL;NULL;NULL
+529;NULL;NULL;NULL
+530;NULL;NULL;NULL
+531;NULL;NULL;NULL
+532;NULL;NULL;NULL
+533;NULL;NULL;NULL
+534;NULL;NULL;NULL
+535;NULL;NULL;NULL
+679;NULL;NULL;NULL
+680;Components;Road Frames;HL Road Frame
+706;Components;Road Frames;HL Road Frame
+707;Accessories;Helmets;Sport-100
+708;Accessories;Helmets;Sport-100
+709;Clothing;Socks;Mountain Bike Socks
+710;Clothing;Socks;Mountain Bike Socks
+711;Accessories;Helmets;Sport-100
+712;Clothing;Caps;Cycling Cap
+713;Clothing;Jerseys;Long-Sleeve Logo Jersey
+714;Clothing;Jerseys;Long-Sleeve Logo Jersey
+715;Clothing;Jerseys;Long-Sleeve Logo Jersey
+716;Clothing;Jerseys;Long-Sleeve Logo Jersey
+717;Components;Road Frames;HL Road Frame
+718;Components;Road Frames;HL Road Frame
+719;Components;Road Frames;HL Road Frame
+720;Components;Road Frames;HL Road Frame
+721;Components;Road Frames;HL Road Frame
+722;Components;Road Frames;LL Road Frame
+723;Components;Road Frames;LL Road Frame
+724;Components;Road Frames;LL Road Frame
+725;Components;Road Frames;LL Road Frame
+726;Components;Road Frames;LL Road Frame
+727;Components;Road Frames;LL Road Frame
+728;Components;Road Frames;LL Road Frame
+729;Components;Road Frames;LL Road Frame
+730;Components;Road Frames;LL Road Frame
+731;Components;Road Frames;ML Road Frame
+732;Components;Road Frames;ML Road Frame
+733;Components;Road Frames;ML Road Frame
+734;Components;Road Frames;ML Road Frame
+735;Components;Road Frames;ML Road Frame
+736;Components;Road Frames;LL Road Frame
+737;Components;Road Frames;LL Road Frame
+738;Components;Road Frames;LL Road Frame
+739;Components;Mountain Frames;HL Mountain Frame
+740;Components;Mountain Frames;HL Mountain Frame
+741;Components;Mountain Frames;HL Mountain Frame
+742;Components;Mountain Frames;HL Mountain Frame
+743;Components;Mountain Frames;HL Mountain Frame
+744;Components;Mountain Frames;HL Mountain Frame
+745;Components;Mountain Frames;HL Mountain Frame
+746;Components;Mountain Frames;HL Mountain Frame
+747;Components;Mountain Frames;HL Mountain Frame
+748;Components;Mountain Frames;HL Mountain Frame
+749;Bikes;Road Bikes;Road-150
+750;Bikes;Road Bikes;Road-150
+751;Bikes;Road Bikes;Road-150
+752;Bikes;Road Bikes;Road-150
+753;Bikes;Road Bikes;Road-150
+754;Bikes;Road Bikes;Road-450
+755;Bikes;Road Bikes;Road-450
+756;Bikes;Road Bikes;Road-450
+757;Bikes;Road Bikes;Road-450
+758;Bikes;Road Bikes;Road-450
+759;Bikes;Road Bikes;Road-650
+760;Bikes;Road Bikes;Road-650
+761;Bikes;Road Bikes;Road-650
+762;Bikes;Road Bikes;Road-650
+763;Bikes;Road Bikes;Road-650
+764;Bikes;Road Bikes;Road-650
+765;Bikes;Road Bikes;Road-650
+766;Bikes;Road Bikes;Road-650
+767;Bikes;Road Bikes;Road-650
+768;Bikes;Road Bikes;Road-650
+769;Bikes;Road Bikes;Road-650
+770;Bikes;Road Bikes;Road-650
+771;Bikes;Mountain Bikes;Mountain-100
+772;Bikes;Mountain Bikes;Mountain-100
+773;Bikes;Mountain Bikes;Mountain-100
+774;Bikes;Mountain Bikes;Mountain-100
+775;Bikes;Mountain Bikes;Mountain-100
+776;Bikes;Mountain Bikes;Mountain-100
+777;Bikes;Mountain Bikes;Mountain-100
+778;Bikes;Mountain Bikes;Mountain-100
+779;Bikes;Mountain Bikes;Mountain-200
+780;Bikes;Mountain Bikes;Mountain-200
+781;Bikes;Mountain Bikes;Mountain-200
+782;Bikes;Mountain Bikes;Mountain-200
+783;Bikes;Mountain Bikes;Mountain-200
+784;Bikes;Mountain Bikes;Mountain-200
+785;Bikes;Mountain Bikes;Mountain-300
+786;Bikes;Mountain Bikes;Mountain-300
+787;Bikes;Mountain Bikes;Mountain-300
+788;Bikes;Mountain Bikes;Mountain-300
+789;Bikes;Road Bikes;Road-250
+790;Bikes;Road Bikes;Road-250
+791;Bikes;Road Bikes;Road-250
+792;Bikes;Road Bikes;Road-250
+793;Bikes;Road Bikes;Road-250
+794;Bikes;Road Bikes;Road-250
+795;Bikes;Road Bikes;Road-250
+796;Bikes;Road Bikes;Road-250
+797;Bikes;Road Bikes;Road-550-W
+798;Bikes;Road Bikes;Road-550-W
+799;Bikes;Road Bikes;Road-550-W
+800;Bikes;Road Bikes;Road-550-W
+801;Bikes;Road Bikes;Road-550-W
+802;Components;Forks;LL Fork
+803;Components;Forks;ML Fork
+804;Components;Forks;HL Fork
+805;Components;Headsets;LL Headset
+806;Components;Headsets;ML Headset
+807;Components;Headsets;HL Headset
+808;Components;Handlebars;LL Mountain Handlebars
+809;Components;Handlebars;ML Mountain Handlebars
+810;Components;Handlebars;HL Mountain Handlebars
+811;Components;Handlebars;LL Road Handlebars
+812;Components;Handlebars;ML Road Handlebars
+813;Components;Handlebars;HL Road Handlebars
+814;Components;Mountain Frames;ML Mountain Frame-W
+815;Components;Wheels;LL Mountain Front Wheel
+816;Components;Wheels;ML Mountain Front Wheel
+817;Components;Wheels;HL Mountain Front Wheel
+818;Components;Wheels;LL Road Front Wheel
+819;Components;Wheels;ML Road Front Wheel
+820;Components;Wheels;HL Road Front Wheel
+821;Components;Wheels;Touring Front Wheel
+822;Components;Road Frames;ML Road Frame-W
+823;Components;Wheels;LL Mountain Rear Wheel
+824;Components;Wheels;ML Mountain Rear Wheel
+825;Components;Wheels;HL Mountain Rear Wheel
+826;Components;Wheels;LL Road Rear Wheel
+827;Components;Wheels;ML Road Rear Wheel
+828;Components;Wheels;HL Road Rear Wheel
+829;Components;Wheels;Touring Rear Wheel
+830;Components;Mountain Frames;ML Mountain Frame
+831;Components;Mountain Frames;ML Mountain Frame
+832;Components;Mountain Frames;ML Mountain Frame
+833;Components;Road Frames;ML Road Frame-W
+834;Components;Road Frames;ML Road Frame-W
+835;Components;Road Frames;ML Road Frame-W
+836;Components;Road Frames;ML Road Frame-W
+837;Components;Road Frames;HL Road Frame
+838;Components;Road Frames;HL Road Frame
+839;Components;Road Frames;HL Road Frame
+840;Components;Road Frames;HL Road Frame
+841;Clothing;Shorts;Men's Sports Shorts
+842;Accessories;Panniers;Touring-Panniers
+843;Accessories;Locks;Cable Lock
+844;Accessories;Pumps;Minipump
+845;Accessories;Pumps;Mountain Pump
+846;Accessories;Lights;Taillight
+847;Accessories;Lights;Headlights - Dual-Beam
+848;Accessories;Lights;Headlights - Weatherproof
+849;Clothing;Shorts;Men's Sports Shorts
+850;Clothing;Shorts;Men's Sports Shorts
+851;Clothing;Shorts;Men's Sports Shorts
+852;Clothing;Tights;Women's Tights
+853;Clothing;Tights;Women's Tights
+854;Clothing;Tights;Women's Tights
+855;Clothing;Bib-Shorts;Men's Bib-Shorts
+856;Clothing;Bib-Shorts;Men's Bib-Shorts
+857;Clothing;Bib-Shorts;Men's Bib-Shorts
+858;Clothing;Gloves;Half-Finger Gloves
+859;Clothing;Gloves;Half-Finger Gloves
+860;Clothing;Gloves;Half-Finger Gloves
+861;Clothing;Gloves;Full-Finger Gloves
+862;Clothing;Gloves;Full-Finger Gloves
+863;Clothing;Gloves;Full-Finger Gloves
+864;Clothing;Vests;Classic Vest
+865;Clothing;Vests;Classic Vest
+866;Clothing;Vests;Classic Vest
+867;Clothing;Shorts;Women's Mountain Shorts
+868;Clothing;Shorts;Women's Mountain Shorts
+869;Clothing;Shorts;Women's Mountain Shorts
+870;Accessories;Bottles and Cages;Water Bottle
+871;Accessories;Bottles and Cages;Mountain Bottle Cage
+872;Accessories;Bottles and Cages;Road Bottle Cage
+873;Accessories;Tires and Tubes;Patch kit
+874;Clothing;Socks;Racing Socks
+875;Clothing;Socks;Racing Socks
+876;Accessories;Bike Racks;Hitch Rack - 4-Bike
+877;Accessories;Cleaners;Bike Wash
+878;Accessories;Fenders;Fender Set - Mountain
+879;Accessories;Bike Stands;All-Purpose Bike Stand
+880;Accessories;Hydration Packs;Hydration Pack
+881;Clothing;Jerseys;Short-Sleeve Classic Jersey
+882;Clothing;Jerseys;Short-Sleeve Classic Jersey
+883;Clothing;Jerseys;Short-Sleeve Classic Jersey
+884;Clothing;Jerseys;Short-Sleeve Classic Jersey
+885;Components;Touring Frames;HL Touring Frame
+886;Components;Touring Frames;LL Touring Frame
+887;Components;Touring Frames;HL Touring Frame
+888;Components;Touring Frames;HL Touring Frame
+889;Components;Touring Frames;HL Touring Frame
+890;Components;Touring Frames;HL Touring Frame
+891;Components;Touring Frames;HL Touring Frame
+892;Components;Touring Frames;HL Touring Frame
+893;Components;Touring Frames;HL Touring Frame
+894;Components;Derailleurs;Rear Derailleur
+895;Components;Touring Frames;LL Touring Frame
+896;Components;Touring Frames;LL Touring Frame
+897;Components;Touring Frames;LL Touring Frame
+898;Components;Touring Frames;LL Touring Frame
+899;Components;Touring Frames;LL Touring Frame
+900;Components;Touring Frames;LL Touring Frame
+901;Components;Touring Frames;LL Touring Frame
+902;Components;Touring Frames;LL Touring Frame
+903;Components;Touring Frames;LL Touring Frame
+904;Components;Mountain Frames;ML Mountain Frame-W
+905;Components;Mountain Frames;ML Mountain Frame-W
+906;Components;Mountain Frames;ML Mountain Frame-W
+907;Components;Brakes;Rear Brakes
+908;Components;Saddles;LL Mountain Seat/Saddle 2
+909;Components;Saddles;ML Mountain Seat/Saddle 2
+910;Components;Saddles;HL Mountain Seat/Saddle 2
+911;Components;Saddles;LL Road Seat/Saddle 1
+912;Components;Saddles;ML Road Seat/Saddle 2
+913;Components;Saddles;HL Road Seat/Saddle 2
+914;Components;Saddles;LL Touring Seat/Saddle
+915;Components;Saddles;ML Touring Seat/Saddle
+916;Components;Saddles;HL Touring Seat/Saddle
+917;Components;Mountain Frames;LL Mountain Frame
+918;Components;Mountain Frames;LL Mountain Frame
+919;Components;Mountain Frames;LL Mountain Frame
+920;Components;Mountain Frames;LL Mountain Frame
+921;Accessories;Tires and Tubes;Mountain Tire Tube
+922;Accessories;Tires and Tubes;Road Tire Tube
+923;Accessories;Tires and Tubes;Touring Tire Tube
+924;Components;Mountain Frames;LL Mountain Frame
+925;Components;Mountain Frames;LL Mountain Frame
+926;Components;Mountain Frames;LL Mountain Frame
+927;Components;Mountain Frames;LL Mountain Frame
+928;Accessories;Tires and Tubes;LL Mountain Tire
+929;Accessories;Tires and Tubes;ML Mountain Tire
+930;Accessories;Tires and Tubes;HL Mountain Tire
+931;Accessories;Tires and Tubes;LL Road Tire
+932;Accessories;Tires and Tubes;ML Road Tire
+933;Accessories;Tires and Tubes;HL Road Tire
+934;Accessories;Tires and Tubes;Touring Tire
+935;Components;Pedals;LL Mountain Pedal
+936;Components;Pedals;ML Mountain Pedal
+937;Components;Pedals;HL Mountain Pedal
+938;Components;Pedals;LL Road Pedal
+939;Components;Pedals;ML Road Pedal
+940;Components;Pedals;HL Road Pedal
+941;Components;Pedals;Touring Pedal
+942;Components;Mountain Frames;ML Mountain Frame-W
+943;Components;Mountain Frames;LL Mountain Frame
+944;Components;Mountain Frames;LL Mountain Frame
+945;Components;Derailleurs;Front Derailleur
+946;Components;Handlebars;LL Touring Handlebars
+947;Components;Handlebars;HL Touring Handlebars
+948;Components;Brakes;Front Brakes
+949;Components;Cranksets;LL Crankset
+950;Components;Cranksets;ML Crankset
+951;Components;Cranksets;HL Crankset
+952;Components;Chains;Chain
+953;Bikes;Touring Bikes;Touring-2000
+954;Bikes;Touring Bikes;Touring-1000
+955;Bikes;Touring Bikes;Touring-1000
+956;Bikes;Touring Bikes;Touring-1000
+957;Bikes;Touring Bikes;Touring-1000
+958;Bikes;Touring Bikes;Touring-3000
+959;Bikes;Touring Bikes;Touring-3000
+960;Bikes;Touring Bikes;Touring-3000
+961;Bikes;Touring Bikes;Touring-3000
+962;Bikes;Touring Bikes;Touring-3000
+963;Bikes;Touring Bikes;Touring-3000
+964;Bikes;Touring Bikes;Touring-3000
+965;Bikes;Touring Bikes;Touring-3000
+966;Bikes;Touring Bikes;Touring-1000
+967;Bikes;Touring Bikes;Touring-1000
+968;Bikes;Touring Bikes;Touring-1000
+969;Bikes;Touring Bikes;Touring-1000
+970;Bikes;Touring Bikes;Touring-2000
+971;Bikes;Touring Bikes;Touring-2000
+972;Bikes;Touring Bikes;Touring-2000
+973;Bikes;Road Bikes;Road-350-W
+974;Bikes;Road Bikes;Road-350-W
+975;Bikes;Road Bikes;Road-350-W
+976;Bikes;Road Bikes;Road-350-W
+977;Bikes;Road Bikes;Road-750
+978;Bikes;Touring Bikes;Touring-3000
+979;Bikes;Touring Bikes;Touring-3000
+980;Bikes;Mountain Bikes;Mountain-400-W
+981;Bikes;Mountain Bikes;Mountain-400-W
+982;Bikes;Mountain Bikes;Mountain-400-W
+983;Bikes;Mountain Bikes;Mountain-400-W
+984;Bikes;Mountain Bikes;Mountain-500
+985;Bikes;Mountain Bikes;Mountain-500
+986;Bikes;Mountain Bikes;Mountain-500
+987;Bikes;Mountain Bikes;Mountain-500
+988;Bikes;Mountain Bikes;Mountain-500
+989;Bikes;Mountain Bikes;Mountain-500
+990;Bikes;Mountain Bikes;Mountain-500
+991;Bikes;Mountain Bikes;Mountain-500
+992;Bikes;Mountain Bikes;Mountain-500
+993;Bikes;Mountain Bikes;Mountain-500
+994;Components;Bottom Brackets;LL Bottom Bracket
+995;Components;Bottom Brackets;ML Bottom Bracket
+996;Components;Bottom Brackets;HL Bottom Bracket
+997;Bikes;Road Bikes;Road-750
+998;Bikes;Road Bikes;Road-750
+999;Bikes;Road Bikes;Road-750
