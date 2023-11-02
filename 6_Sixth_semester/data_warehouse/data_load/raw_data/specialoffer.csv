@@ -1,0 +1,17 @@
+﻿SpecialOfferKey;discountPercentage;type
+1;0,00;No Discount
+2;0,02;Volume Discount
+3;0,05;Volume Discount
+4;0,10;Volume Discount
+5;0,15;Volume Discount
+6;0,20;Volume Discount
+7;0,35;Discontinued Product
+8;0,10;Seasonal Discount
+9;0,30;Excess Inventory
+10;0,50;Excess Inventory
+11;0,15;Seasonal Discount
+12;0,35;Excess Inventory
+13;0,15;New Product
+14;0,20;New Product
+15;0,50;Seasonal Discount
+16;0,40;Discontinued Product
