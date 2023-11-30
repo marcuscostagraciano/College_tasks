@@ -40,4 +40,4 @@ class Produto:
 
     def __str__(self) -> str:
         return f"Cod {self.codigo_produto}: {self.nome_produto}" + \
-            f" - {self.nome_fabricante}: R$ {self.preco}"
+            f" - {self.nome_fabricante}. R$ {self.preco}"
