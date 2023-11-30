@@ -6,9 +6,9 @@ Produtos: TypeAlias = Produto | list[Produto] | tuple[Produto]
 
 class Pedido:
     def __init__(self, prod: None | Produtos = None) -> None:
-        self._produtos = []
-
         match prod:
+            case None:
+                self._produtos = []
             case Produto():
                 self._produtos = [prod]
             case list() | tuple():
