@@ -10,7 +10,7 @@ class Pagamento:
 
     @tipo_pagamento.setter
     def tipo_pagamento(self, tipo_pagamento: str) -> None:
-        tipo_pagamento: str = lower(tipo_pagamento)
+        tipo_pagamento: str = tipo_pagamento.lower()
 
         match tipo_pagamento:
             case 'cartao':
