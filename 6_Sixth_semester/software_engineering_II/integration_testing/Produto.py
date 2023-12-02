@@ -1,10 +1,16 @@
+import pandas as pd
+
 class Produto:
-    def __init__(self, cod_prod: int, nome_prod: str,
-                 nome_fabricante: str, preco: int) -> None:
+    def __init__(self, cod_prod: int) -> None:
         self._codigo_prod = cod_prod
-        self._nome_prod = nome_prod
-        self._fabricante = nome_fabricante
-        self._preco = preco
+        self.puxar_dados_por_cod_prod()
+
+    def puxar_dados_por_cod_prod(self) -> None:
+        produtos = pd.read_csv('mock_data/PRODUCTS.csv')
+        produto = produtos.loc[produtos['cod_prod'] == self._codigo_prod]
+        self._nome_prod = produto['nome_prod'].values[0]
+        self._fabricante = produto['nome_fabricante'].values[0]
+        self._preco = produto['preco'].values[0]
 
     @property
     def codigo_produto(self) -> int:
