@@ -47,10 +47,3 @@ class Produto:
     def __str__(self) -> str:
         return f"Cod {self.codigo_produto}: {self.nome_produto}" + \
             f" - {self.nome_fabricante}. R$ {self.preco}"
-
-produto = Produto(12)
-
-print(produto.codigo_produto)
-print(produto.nome_produto)
-print(produto.nome_fabricante)
-print(produto.preco)

@@ -12,6 +12,7 @@ class Pedido:
             case Produto():
                 self._produtos = [prod]
             case list() | tuple():
+                self._produtos = []
                 self._produtos.extend(prod)
             case _:
                 raise TypeError("Only products are allowed")
