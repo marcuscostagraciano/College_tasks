@@ -1,4 +1,5 @@
-from Pedido import Pedido
+from .Pedido import Pedido
+
 
 class Pagamento:
     def __init__(self, ped: Pedido) -> None:

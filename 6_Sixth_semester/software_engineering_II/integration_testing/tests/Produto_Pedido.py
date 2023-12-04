@@ -1,9 +1,9 @@
-import sys
+from .path_normalizer import normalize_path
+normalize_path()
 
-sys.path.insert(0, '/home/gianluca/dev/College_tasks/6_Sixth_semester/software_engineering_II/integration_testing')
+from src.Produto import Produto
+from src.Pedido import Pedido
 
-from Produto import Produto
-from Pedido import Pedido
 
 prod1 = Produto(12)
 prod2 = Produto(16)

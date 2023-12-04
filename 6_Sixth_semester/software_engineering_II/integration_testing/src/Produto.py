@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 class Produto:
     def __init__(self, cod_prod: int) -> None:
         self._codigo_prod = cod_prod

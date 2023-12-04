@@ -1,4 +1,4 @@
-from Produto import Produto
+from .Produto import Produto
 from typing import TypeAlias
 
 Produtos: TypeAlias = Produto | list[Produto] | tuple[Produto]
