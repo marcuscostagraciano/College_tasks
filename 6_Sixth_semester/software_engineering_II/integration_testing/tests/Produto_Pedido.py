@@ -13,21 +13,21 @@ prod5 = Produto(67)
 ped = Pedido([prod1, prod2, prod3, prod4, prod5])
 
 print(ped)
-print(ped.valor_pedido)
+print(f"{ped.valor_pedido:.3f}")
 
 prod6 = Produto(54)
 ped.add_produto(prod6)
 
 print(ped)
-print(ped.valor_pedido)
+print(f"{ped.valor_pedido:.3f}")
 
 prod7 = Produto(54)
 ped.add_produto(prod6)
 
 print(ped)
-print(ped.valor_pedido)
+print(f"{ped.valor_pedido:.3f}")
 
 ped.remove_produto(prod6)
 
 print(ped)
-print(ped.valor_pedido)
+print(f"{ped.valor_pedido:.3f}")
