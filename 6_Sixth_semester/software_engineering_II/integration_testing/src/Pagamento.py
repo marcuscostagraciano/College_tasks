@@ -8,6 +8,10 @@ class Pagamento:
     @property
     def tipo_pagamento(self) -> str:
         return self.tipo_pagamento
+    
+    @property
+    def pedido(self) -> str:
+        return self._pedido
 
     @tipo_pagamento.setter
     def tipo_pagamento(self, tipo_pagamento: str) -> None:
@@ -20,3 +24,12 @@ class Pagamento:
                 self.tipo_pagamento = 'Pix'
             case _:
                 raise TypeError('Property Pagamento.tipo_pagamento must be "Cartao" or "Pix"')
+            
+    def __str__(self) -> str:
+        produtos = 'código | produto | fabricante | preço\n'
+
+        for produto in self.pedido.produtos:
+            print(produto)
+            produtos += f'{produto["codigo_produto"]} | {produto["nome_produto"]} | {produto["nome_fabricante"]} | {produto["preco"]}\n'
+
+        return f'{produtos}'
