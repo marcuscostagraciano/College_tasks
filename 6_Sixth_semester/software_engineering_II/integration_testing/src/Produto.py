@@ -7,11 +7,11 @@ class Produto:
         self.puxar_dados_por_cod_prod()
 
     def puxar_dados_por_cod_prod(self) -> None:
-        produtos = pd.read_csv('mock_data/PRODUCTS.csv')
-        produto = produtos.loc[produtos['cod_prod'] == self._codigo_prod]
-        self._nome_prod = produto['nome_prod'].values[0]
-        self._fabricante = produto['nome_fabricante'].values[0]
-        self._preco = produto['preco'].values[0]
+        produtos = pd.read_csv('mock_data/PRODUCTS.csv', index_col='cod_prod')
+        produto = produtos.loc[self._codigo_prod]
+        self._nome_prod = produto['nome_prod']
+        self._fabricante = produto['nome_fabricante']
+        self._preco = produto['preco']
 
     @property
     def codigo_produto(self) -> int:
