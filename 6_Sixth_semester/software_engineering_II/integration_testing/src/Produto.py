@@ -20,6 +20,7 @@ class Produto:
     @codigo_produto.setter
     def codigo_produto(self, novo_codigo: int) -> None:
         self._codigo_prod = novo_codigo
+        self.puxar_dados_por_cod_prod()
 
     @property
     def nome_produto(self) -> str:
@@ -48,3 +49,4 @@ class Produto:
     def __str__(self) -> str:
         return f"Cod {self.codigo_produto}: {self.nome_produto}" + \
             f" - {self.nome_fabricante}. R$ {self.preco}"
+    
