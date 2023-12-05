@@ -1,9 +1,8 @@
 from .Pedido import Pedido
 
-
 class Pagamento:
     def __init__(self, ped: Pedido) -> None:
-        ...
+        self._pedido = ped
 
     @property
     def tipo_pagamento(self) -> str:
