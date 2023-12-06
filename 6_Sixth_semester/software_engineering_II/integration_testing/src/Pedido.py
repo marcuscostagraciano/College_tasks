@@ -44,6 +44,6 @@ class Pedido:
     @property
     def valor_pedido(self) -> float | int:
         return sum([prod.preco for prod in self._produtos])
-    
+
     def __str__(self) -> str:
         return f"{[prod.nome_produto for prod in self._produtos]}"
