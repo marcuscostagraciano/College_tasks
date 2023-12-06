@@ -4,6 +4,8 @@ class Autenticacao:
     def __init__(self, senha: str, email: str) -> None:
         self._senha = senha
         self._email = email
+        self._nome = None
+        self._conta = None
         self.validarUsuario()
 
     def validarUsuario(self) -> None:
@@ -42,5 +44,3 @@ class Autenticacao:
 
     def __str__(self) -> str:
         return f"Nome: {self.nome}. E-mail: {self.email}"
-
-aut = Autenticacao('123', 'jose@email.com')
