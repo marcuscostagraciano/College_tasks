@@ -18,17 +18,15 @@ class Pagamento:
             if(self.pedido.valor_pedido > self.saldo):
                 raise Exception('Não foi possível efetuar o pagamento: saldo insuficiente.')
             
-            contas = pd.read_csv('mock_data/CONTAS.csv')
+            contas = pd.read_csv('mock_data/CONTAS.csv', index_col='conta')
 
-            print(contas.loc[contas['conta' == self.conta], 'saldo'])
-
-            # if(self.tipo_pagamento == 'Pix'):
-            #     contas.loc[contas['conta' == self.conta], 'saldo'] -= self.pedido.valor_pedido
+            if(self.tipo_pagamento == 'Pix'):
+                contas.loc[self.conta].saldo -= self.pedido.valor_pedido
         
-            # if(self.tipo_pagamento == 'Cartao'):
-            #     contas.loc[contas['conta' == self.conta], 'limite_disponivel'] -= self.pedido.valor_pedido
+            if(self.tipo_pagamento == 'Cartao'):
+                contas.loc[self.conta].limite_disponivel -= self.pedido.valor_pedido
 
-            # contas.to_csv('mock_data/CONTAS.csv')
+            contas.to_csv('mock_data/CONTAS.csv')
 
         except Exception as e:
             print(e)
