@@ -4,26 +4,43 @@ class Autenticacao:
     def __init__(self, senha: str, email: str) -> None:
         self._senha = senha
         self._email = email
+        self.validarUsuario()
 
-        usuarios = pd.read_csv('mock_data/USERS.csv')
-
+    def validarUsuario(self) -> None:
+        try:
+            usuarios = pd.read_csv('mock_data/USERS.csv', index_col='email')
+            usuario = usuarios.loc[self.email]
         
+            if (str(usuario.senha) != self.senha):
+                raise Exception('Usuário inválido')
+            
+        except KeyError:
+            print('E-mail não cadastrado')
 
-    @property
-    def senha(self) -> str:
-        return self._senha
+        except Exception as e:
+            print(e)
 
-    @senha.setter
-    def senha(self, novo_senha) -> None:
-        self._senha = novo_senha
+        else:
+            self._nome = usuario.nome
+            self._conta = usuario.conta
 
     @property
     def email(self) -> str:
         return self._email
 
-    @email.setter
-    def email(self, novo_email) -> None:
-        self._email = novo_email
+    @property
+    def nome(self) -> str:
+        return self._nome
+
+    @property
+    def senha(self) -> str:
+        return self._senha
+
+    @property
+    def conta(self) -> str:
+        return self._conta
 
     def __str__(self) -> str:
-        return f"senha: {self.senha}. Email: {self.email}"
+        return f"Nome: {self.nome}. E-mail: {self.email}"
+
+aut = Autenticacao('123', 'jose@email.com')
