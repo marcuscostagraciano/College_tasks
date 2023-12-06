@@ -17,6 +17,18 @@ class Pedido:
             case _:
                 raise TypeError("Only products are allowed")
 
+    @property
+    def produtos(self) -> tuple[dict]:
+        return tuple(
+            {
+                'codigo_produto': produto.codigo_produto,
+                'nome_produto': produto.nome_produto,
+                'nome_fabricante': produto.nome_fabricante,
+                'preco': produto.preco
+            }
+            for produto in self._produtos
+        )
+
     def add_produto(self, produto: Produtos) -> None:
         match produto:
             case Produto():
@@ -32,6 +44,6 @@ class Pedido:
     @property
     def valor_pedido(self) -> float | int:
         return sum([prod.preco for prod in self._produtos])
-
+    
     def __str__(self) -> str:
         return f"{[prod.nome_produto for prod in self._produtos]}"
