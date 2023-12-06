@@ -1,6 +1,7 @@
 from .Pedido import Pedido
 import regex_spm
 
+
 class Pagamento:
     def __init__(self, ped: Pedido) -> None:
         self._pedido = ped
@@ -9,7 +10,7 @@ class Pagamento:
     @property
     def tipo_pagamento(self) -> str:
         return self._tipo_pagamento
-    
+
     @property
     def pedido(self) -> str:
         return self._pedido
@@ -25,7 +26,7 @@ class Pagamento:
                 self._tipo_pagamento = 'Pix'
             case _:
                 raise TypeError('Property Pagamento.tipo_pagamento must be "Cartao" or "Pix"')
-            
+
     def __str__(self) -> str:
         produtos = 'código | produto | fabricante | preço\n'
 
