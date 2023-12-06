@@ -12,19 +12,19 @@ class Pagamento:
 
     def pagar(self) -> None:
         try:
-            if(self.tipo_pagamento == None):
+            if (self.tipo_pagamento is None):
                 raise Exception('Escolha a forma de pagamento.')
-            
-            if(self.pedido.valor_pedido > self.saldo):
+
+            if (self.pedido.valor_pedido > self.saldo):
                 raise Exception('Não foi possível efetuar o pagamento: saldo insuficiente.')
-            
+
             contas = pd.read_csv('mock_data/CONTAS.csv', index_col='conta')
 
-            if(self.tipo_pagamento == 'Pix'):
-                contas.loc[self.conta].saldo -= self.pedido.valor_pedido
-        
-            if(self.tipo_pagamento == 'Cartao'):
-                contas.loc[self.conta].limite_disponivel -= self.pedido.valor_pedido
+            match self.tipo_pagamento:
+                case 'Pix':
+                    contas.loc[self.conta].saldo -= self.pedido.valor_pedido
+                case 'Cartao':
+                    contas.loc[self.conta].limite_disponivel -= self.pedido.valor_pedido
 
             contas.to_csv('mock_data/CONTAS.csv')
 
@@ -35,19 +35,19 @@ class Pagamento:
     def saldo(self) -> float:
         contas = pd.read_csv('mock_data/CONTAS.csv', index_col='conta')
         conta = contas.loc[self.conta]
-        
-        if(self.tipo_pagamento == 'Pix'):
+
+        if (self.tipo_pagamento == 'Pix'):
             return conta.saldo
-        
-        if(self.tipo_pagamento == 'Cartao'):
+
+        if (self.tipo_pagamento == 'Cartao'):
             return conta.limite_disponivel
-        
+
         raise Exception('Escolha a forma de pagamento.')
 
     @property
     def pedido(self) -> str:
         return self._pedido
-    
+
     @property
     def conta(self) -> str:
         return self._conta
