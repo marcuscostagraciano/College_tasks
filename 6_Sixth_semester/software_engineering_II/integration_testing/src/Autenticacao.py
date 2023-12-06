@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 class Autenticacao:
     def __init__(self, senha: str, email: str) -> None:
         self._senha = senha
@@ -12,10 +13,10 @@ class Autenticacao:
         try:
             usuarios = pd.read_csv('mock_data/USERS.csv', index_col='email')
             usuario = usuarios.loc[self.email]
-        
+
             if (str(usuario.senha) != self.senha):
                 raise Exception('Usuário inválido')
-            
+
         except KeyError:
             print('E-mail não cadastrado')
 
