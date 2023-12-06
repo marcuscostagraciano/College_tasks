@@ -5,15 +5,18 @@ import regex_spm
 class Pagamento:
     def __init__(self, ped: Pedido) -> None:
         self._pedido = ped
-        self._tipo_pagamento = ''
+        self._tipo_pagamento = None
 
-    @property
-    def tipo_pagamento(self) -> str:
-        return self._tipo_pagamento
+    def pagar(self) -> None:
+        print('Pago.')
 
     @property
     def pedido(self) -> str:
         return self._pedido
+
+    @property
+    def tipo_pagamento(self) -> str:
+        return self._tipo_pagamento
 
     @tipo_pagamento.setter
     def tipo_pagamento(self, tipo_pagamento: str) -> None:
